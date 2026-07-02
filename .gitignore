@@ -1,0 +1,89 @@
+# Backend - Laravel
+backend/vendor/
+backend/.env
+backend/.env.local
+backend/.env.*.php
+backend/.DS_Store
+backend/Thumbs.db
+backend/storage/logs/*
+backend/storage/framework/cache/*
+backend/storage/framework/sessions/*
+backend/bootstrap/cache/
+backend/.idea/
+backend/.vscode/
+backend/*.log
+backend/.history/
+
+# Frontend - Flutter
+frontend/.dart_tool/
+frontend/.flutter-plugins
+frontend/.flutter-plugins-dependencies
+frontend/build/
+frontend/.packages
+frontend/.pub-cache/
+frontend/pubspec.lock
+frontend/.idea/
+frontend/.vscode/
+frontend/.fvm/
+frontend/.gradle/
+frontend/.m2/
+frontend/android/.gradle
+frontend/android/local.properties
+frontend/android/GeneratedPluginRegistrant.java
+frontend/ios/Pods/
+frontend/ios/Flutter/Flutter.framework
+frontend/ios/Flutter/Flutter.podspec
+frontend/ios/Flutter/Generated.xcconfig
+frontend/ios/Flutter/ephemeralmodules.txt
+frontend/ios/.symlinks/
+frontend/ios/.generated/
+frontend/ios/Flutter/Flutter.build/
+frontend/macos/Flutter/Flutter.framework
+frontend/macos/Flutter/GeneratedPluginRegistrant.swift
+frontend/macos/Flutter/ephemeralmodules.txt
+frontend/macos/.symlinks/
+frontend/macos/.generated/
+frontend/windows/flutter/generated_plugins.cmake
+frontend/windows/flutter/generated_plugins.vcxproj
+
+# Frontend - Web
+frontend/web/flutter_bootstrap.js
+frontend/web/flutter_service_worker.js
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# Environment
+.env.local
+.env.*.local
+
+# Logs
+*.log
+logs/
+
+# System
+node_modules/
+.next/
+dist/
+build/
