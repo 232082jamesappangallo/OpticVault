@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ItemController;
 use App\Http\Controllers\TokenController;
+use App\Http\Controllers\CategoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,6 +16,7 @@ use App\Http\Controllers\TokenController;
 // Public routes (tidak perlu authentication)
 Route::post('/auth/register', [AuthController::class, 'register']);
 Route::post('/auth/login', [AuthController::class, 'login']);
+Route::get('/categories', [CategoryController::class, 'index']); // Get all categories
 
 // Protected routes (memerlukan authentication JWT)
 Route::middleware('auth:sanctum')->group(function () {
@@ -27,6 +29,11 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::get('/tokens/current', [TokenController::class, 'current']);
     Route::delete('/tokens/{tokenId}', [TokenController::class, 'revoke']);
     Route::post('/tokens/revoke-all', [TokenController::class, 'revokeAll']);
+
+    // Category routes
+    Route::post('/categories', [CategoryController::class, 'store']);
+    Route::put('/categories/{category}', [CategoryController::class, 'update']);
+    Route::delete('/categories/{category}', [CategoryController::class, 'destroy']);
 
     // Item routes - special routes harus sebelum resource routes
     Route::get('/items/recent', [ItemController::class, 'recent']);
